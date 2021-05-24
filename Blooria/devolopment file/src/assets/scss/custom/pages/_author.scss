@@ -1,0 +1,115 @@
+        .author-banner-area {
+            padding: 150px 0px 70px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .author-content {
+            h1 {
+                font-size: 55px;
+                padding-bottom: 30px;
+            }
+        }
+        
+        // author card style start here
+        .author-card-wrapper {
+            padding-bottom: 100px;
+        }
+        
+        .author-single-card {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .author-single-card-img {
+                margin-right: 30px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .author-single-card-content {
+                flex: 1;
+                min-width: 200px;
+                max-width: 350px;
+                margin-top: 25px;
+                h3 {
+                    font-size: 24px;
+                    padding-bottom: 15px;
+                    a {
+                        color: var(--color-heading);
+                    }
+                }
+                >p {
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding-bottom: 25px;
+                }
+            }
+            .author-social {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                ul {
+                    margin-bottom: 15px;
+                    li {
+                        a {
+                            svg {
+                                path {
+                                    fill: var(--color-light);
+                                }
+                                &:hover {
+                                    path {
+                                        fill: var(--color-Sub-heading);
+                                        transition: .4s ease;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .author-location {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                a {
+                    font-size: 16px;
+                    padding-left: 15px;
+                    display: inline-block;
+                    font-family: var(--title-font);
+                    font-size: var(--text-regular);
+                    color: var(--color-light);
+                }
+                svg {
+                    path {
+                        fill: var(--color-light);
+                    }
+                }
+                &:hover {
+                    svg {
+                        path {
+                            fill: var(--color-Sub-heading);
+                            transition: .4s ease;
+                        }
+                    }
+                    a {
+                        color: var(--color-Sub-heading);
+                        transition: .4s ease;
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            .author-banner-area {
+                padding: 100px 0px 70px;
+            }
+            .author-card-wrapper {
+                padding-bottom: 50px;
+            }
+            .author-content {
+                h1 {
+                    font-size: 40px;
+                    padding-bottom: 15px;
+                }
+            }
+        }

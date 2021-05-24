@@ -1,0 +1,148 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Blooria - Minimal Blog & Magazine HTML Template with Ecommerce
+Version:    1.0.0
+Author:     Electronthemes
+
+
+[Table of contents]
+
+1. Class components
+2. Navigation
+3. Banner
+4. Components
+    4.1=> Blog Card
+    4.2=> Card
+    4.3=> Carousel
+    4.4=> Counter
+    4.5=> Pricing Plan
+    4.6=> Preloader
+    4.7=> Sponsor Ship
+    4.8=> Subscribe From
+    4.9=> Swiper Slider
+    4.10=> Trafic From 
+5. Pages
+    5.1=> HomePage
+    5.2=> Single Blog
+    5.3=> Style Guide
+    5.4=> Membership
+    5.5=> Account Page
+    5.6=> Author
+    5.7=> Premium page
+    5.8=> Tag page
+    5.9=> Contact
+    5.10=> Shop page
+    5.11=> Single tag
+    5.12=> Card
+    5.13=> Checkout
+    5.14=> Single Author
+    5.15=> Product Details
+    5.16=> Account Two
+    5.17=> Dark Theme
+    5.18=> Single Post Page
+    5.19=> Demo page
+    5.20=> Sidebar
+-------------------------------------------------------------------*/
+
+//Base import here
+//=======================>
+@import 'custom/import-pages';
+@import 'custom/pages/menu-bar';
+@import 'custom/pages/banner';
+@import 'custom/pages/homepage';
+@import 'custom/pages/single-blog';
+@import 'custom/pages/style-guide';
+@import 'custom/pages/membership';
+@import 'custom/pages/account-page';
+@import 'custom/pages/author';
+@import 'custom/pages/premium-page';
+@import 'custom/pages/tag-page';
+@import 'custom/pages/contact';
+@import 'custom/pages/shop-page';
+@import 'custom/pages/single-tag';
+@import 'custom/pages/card';
+@import 'custom/pages/checkout';
+@import 'custom/pages/single-author';
+@import 'custom/pages/product-details';
+@import 'custom/pages/account-two';
+@import 'custom/pages/dark-theme';
+@import 'custom/pages/single-post-page';
+@import 'custom/pages/demo-page';
+@import 'custom/pages/sidebar';
+.container {
+    max-width: 1640px;
+}
+
+.placeholder {
+    overflow: hidden !important;
+    position: relative;
+}
+
+.loader-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-delay: .5s;
+    z-index: 999;
+    background-color: #fafafa;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fafafa;
+        transform: scaleY(0);
+    }
+    .count {
+        font-size: 100px;
+        font-weight: bold;
+        color: #fafafa;
+        position: absolute;
+        top: calc(50% - 100px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: difference;
+    }
+    .loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #000;
+        z-index: -9;
+    }
+    .loader2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 2px;
+        background-color: #fafafa;
+        z-index: 9;
+        transform: translateY(-50%);
+    }
+    &.hideen {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        &:after {
+            animation: scaleX .5s 1 linear;
+        }
+    }
+}
+
+@keyframes scaleX {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}

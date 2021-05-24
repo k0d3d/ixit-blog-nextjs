@@ -1,0 +1,54 @@
+$spacing:(p: "padding", pt: "padding-top", pb: "padding-bottom", pl: "padding-left", pr: "padding-right");
+// Spacing style classes
+@each $key,
+$space in $spacing {
+    @for $i from 0 to 21 {
+        .#{$key}-#{$i * 5} {
+            #{$space}: #{$i * 5}px !important;
+        }
+    }
+}
+
+$padding:( p:"padding");
+@each $key,
+$space in $padding {
+    @for $i from 0 to 21 {
+        .#{$key}x-#{$i * 5} {
+            #{$space}-left: #{$i * 5}px !important;
+            #{$space}-right: #{$i * 5}px !important;
+        }
+        .#{$key}y-#{$i * 5} {
+            #{$space}-top: #{$i * 5}px !important;
+            #{$space}-bottom: #{$i * 5}px !important;
+        }
+    }
+}
+
+// Spacing for @media Breakpoints
+$breakpoints: ( xl: 1350, lg: 1199, md: 991, sm: 767, xs: 575);
+@each $breakkey,
+$value in $breakpoints {
+    @media screen and (max-width: #{$value}px) {
+        @each $key,
+        $space in $padding {
+            @for $i from 0 to 21 {
+                .#{$key}x-#{$breakkey}-#{$i * 5} {
+                    #{$space}-left: #{$i * 5}px !important;
+                    #{$space}-right: #{$i * 5}px !important;
+                }
+                .#{$key}y-#{$breakkey}-#{$i * 5} {
+                    #{$space}-top: #{$i * 5}px !important;
+                    #{$space}-bottom: #{$i * 5}px !important;
+                }
+            }
+        }
+        @each $key,
+        $space in $spacing {
+            @for $i from 0 to 21 {
+                .#{$key}-#{$breakkey}-#{$i * 5} {
+                    #{$space}: #{$i * 5}px !important;
+                }
+            }
+        }
+    }
+}

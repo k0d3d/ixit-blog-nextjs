@@ -1,0 +1,233 @@
+    .shop-banner-area {
+        padding-top: 90px;
+    }
+    
+    .card-title {
+        margin-bottom: 0px;
+    }
+    
+    .shop-banner {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .shop-banner-area {
+        padding-top: 100px;
+        .banner-area-bg {
+            padding: 60px 0px;
+            background-image: url(../img/shop/shop-banner.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: var(--body-bg-color);
+                opacity: 0.8;
+                z-index: -1;
+            }
+        }
+    }
+    
+    .shop-banner-content {
+        padding-left: 40px;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 2px;
+            border-radius: 3px;
+            background-color: var(--color-heading);
+        }
+        h2 {
+            font-size: 45px;
+            font-weight: var(--text-bold);
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: var(--color-heading);
+        }
+    }
+    
+    .shop-banner-list {
+        .nice-select-wrap {
+            border: 1px solid var(--border-color);
+            height: 60px;
+            min-width: 350px;
+            border-radius: 6px;
+            a {
+                font-size: 17px;
+                font-weight: var(--text-regular);
+                color: var(--color-heading);
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+            #sort {
+                z-index: 999999;
+                li {
+                    a {
+                        padding: 10px 30px;
+                        &:hover {
+                            padding-left: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .review__rating {
+        display: block;
+        input {
+            display: none;
+            &:checked {
+                &~label {
+                    color: var(--color-text);
+                }
+            }
+        }
+        label {
+            color: var(--color-Sub-heading);
+        }
+    }
+    
+    .single-shop-card {
+        background-color: var(--body-bg-color);
+        border-radius: 5px;
+        height: 100%;
+        transition: var(--ease-in-out);
+        .single-shop-card-content {
+            padding: 30px 40px;
+            .review__rating {
+                margin-bottom: 10px;
+                label {
+                    font-size: 15px;
+                }
+            }
+            .card-title {
+                h3 {
+                    font-size: 23px;
+                    a {
+                        color: var(--color-heading);
+                    }
+                }
+            }
+            .card-content-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+                h4 {
+                    font-size: 23px;
+                    margin-top: 15px;
+                    span {
+                        text-decoration: line-through;
+                        font-size: 18px;
+                        font-weight: var(--text-regular);
+                        color: var(--color-text);
+                    }
+                }
+            }
+            button {
+                font-size: 17px;
+                margin-top: 15px;
+                &:after {
+                    background-color: var(--color-heading);
+                }
+            }
+        }
+        &:hover {
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+            .card-title {
+                h3 {
+                    a {
+                        color: var(--color-Sub-heading);
+                    }
+                }
+            }
+            .single-shop-card-img {
+                position: relative;
+                &:after {
+                    @include top-to-bottom;
+                    opacity: 0.6;
+                    animation: top-to-bottom .8s 1;
+                }
+            }
+        }
+    }
+    
+    //  //MEDIA SCREEN 991px
+    @media screen and (max-width: 1199px) {
+        .shop-banner-area {
+            padding-top: 100px;
+            .banner-area-bg {
+                padding: 50px 0px 30px 0px;
+            }
+        }
+        .shop-banner {
+            flex-wrap: wrap;
+        }
+        .shop-banner-content {
+            padding-right: 80px;
+            padding-bottom: 20px;
+        }
+    }
+    
+    //  //MEDIA SCREEN 991px
+    @media screen and (max-width: 767px) {
+        .shop-banner-content {
+            padding-left: 0px;
+            &:after {
+                display: none;
+            }
+        }
+        .single-shop-card {
+            .single-shop-card-content {
+                padding: 20px 20px;
+                .review__rating {
+                    margin-bottom: 0px;
+                }
+                .card-content-wrap {
+                    button {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+    //  //MEDIA SCREEN 991px
+    @media screen and (max-width:575px) {
+        .shop-banner-list {
+            .nice-select-wrap {
+                min-width: 50%;
+                max-width: 80%;
+            }
+        }
+        .single-shop-card {
+            .single-shop-card-content {
+                .card-content-wrap {
+                    h4 {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        h1 {
+            font-size: 35px;
+        }
+    }

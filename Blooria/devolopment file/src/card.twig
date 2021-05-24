@@ -1,0 +1,227 @@
+{% include "elements/header.twig" %}
+{% include "elements/components/header.twig" with {'defaultHeader': 'default-header'} %}
+<div class="card-banner-area dark-overlay" style="background-image:url(assets/img/cart-banner.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="card-banner-content left-line">
+                <h1>Cart</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="main-content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                <div class="product-info-area">
+                    <table class="table product-table">
+                        <thead>
+                            <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Product Info</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img src="assets/img/svg/close-svg.svg" alt="">
+                                </th>
+                                <td class="product-info" data-title="Product Info">
+                                    <a href="#">
+                                        <img src="assets/img/product-img1.png" alt=""> 
+                                        <p>Combo Flower Vase</p>
+                                    </a>
+                                </td>
+                                <td data-title="Quantity">
+                                    <div class="input-number-wrapper">
+                                        <button class="increase"><img src="assets/img/svg/arrow-top.svg" alt=""></button>
+                                        <input type="text" value="1"/>
+                                        <button class="decrease"><img src="assets/img/svg/arrow-bottom.svg" alt=""></button>
+                                    </div>
+                                </td>
+                                <td data-title="Price">$9.05</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img  src="assets/img/svg/close-svg.svg" alt="">
+                                </th>
+                                <td class="product-info" data-title="Product Info">
+                                    <a href="">
+                                        <img src="assets/img/product-img2.png" alt=""> 
+                                        <p>Minimal Vase Water</p>
+                                    </a>
+                                </td>
+                                <td data-title="Quantity">
+                                    <div class="input-number-wrapper">
+                                        <button class="increase"><img src="assets/img/svg/arrow-top.svg" alt=""></button>
+                                        <input type="text" value="2"/>
+                                        <button class="decrease"><img src="assets/img/svg/arrow-bottom.svg" alt=""></button>
+                                    </div>
+                                </td>
+                                <td data-title="Price">
+                                    <div class="product-item-price">
+                                        <span>2</span>
+                                        <img src="assets/img/svg/close-svg.svg" alt="">
+                                        <span>$9.05</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cupon-code">
+                    <h3>Have a Coupon Code ?</h3>
+                    <div class="subscribe-input btn-black-suscribe">
+                        <input type="text" placeholder="COUPON CODE">
+                        <button class="btn btn-sm">Apply</button>
+                    </div>
+                </div>
+                <div class="checkout-dtls-area">
+                    <div class="checkout-dtls">
+                        <div class="checkout-shipping checkout-comon-width">
+                            <h3>Shipping</h3>
+                            <h5>* * Free Shipping</h5>
+                            <div class="checkout-address">
+                                <img src="assets/img/svg/location.svg" alt="">
+                                <h6>Dhaka , Bangladesh</h6>
+                            </div>
+                            <a href="#">Change Address</a>
+                        </div>
+                        <div class="checkout-amount checkout-comon-width">
+                            <h4>Sub Total</h4>
+                            <h5>$40.45</h5>
+                        </div>
+                        <div class="checkout-total-cost checkout-comon-width">
+                            <h4>Total</h4>
+                            <h3>$40.45</h3>
+                        </div>
+                    </div>
+                    <button class="btn btn-md btn-orange">Proceed to Checkout</button>
+                </div>
+                <section class="related-product pt-100 pt-md-50">
+                    <div class="container">
+                        <div class="section-heading text-center">
+                            <h2>Related Post</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 m-auto">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-4 col-sm-6 mb-xl-50 px-25 px-lg-15 ">
+                                        <div class="single-shop-card single-shop-card-sm">
+                                            <a href="#" class="single-shop-card-img">
+                                                <img src="assets/img/shop/shop-img4.jpg" alt="">
+                                            </a>
+                                            <div class="single-shop-card-content">
+                                                <div class="review__rating">
+                                                    <input type="radio" checked value='0' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='1' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='2' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='3' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='4' name='rating' />
+                                                    <label>★</label>
+                                                </div>
+                                                <div class="card-title">
+                                                    <h3><a href="shop-page.html">Creative 3d Paint</a></h3>
+                                                </div>
+                                                <div class="card-content-wrap">
+                                                    <h4><span>$17.00</span> $9.05</h4>
+                                                    <button class="btn btn-white btn-sm btn-radious-6 border-gray-btn">ADD TO CART</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6 mb-xl-50 px-25 px-lg-15 ">
+                                        <div class="single-shop-card single-shop-card-sm">
+                                            <a href="#" class="single-shop-card-img">
+                                                <img src="assets/img/shop/shop-img5.jpg" alt="">
+                                            </a>
+                                            <div class="single-shop-card-content">
+                                                <div class="review__rating">
+                                                    <input type="radio" checked value='0' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='1' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='2' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='3' name='rating' />
+                                                    <label>★</label>
+
+                                                    <input type="radio" value='4' name='rating' />
+                                                    <label>★</label>
+                                                </div>
+                                                <div class="card-title">
+                                                    <h3><a href="shop-page.html">Minimal Vase for Table</a></h3>
+                                                </div>
+                                                <div class="card-content-wrap">
+                                                    <h4><span>$17.00</span> $9.05</h4>
+                                                    <button class="btn btn-white btn-sm btn-radious-6 border-gray-btn">ADD TO CART</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-6 px-25 px-lg-15 ">
+                                        <div class="single-shop-card single-shop-card-sm">
+                                            <a href="#" class="single-shop-card-img">
+                                                <img src="assets/img/shop/shop-img6.jpg" alt="">
+                                            </a>
+                                            <div class="single-shop-card-content">
+                                                <div class="review__rating">
+                                                    <input type="radio" checked id="star-1" value='0' name='rating' />
+                                                    <label for='star-1'>★</label>
+
+                                                    <input type="radio" id="star-2" value='1' name='rating' />
+                                                    <label for='star-2'>★</label>
+
+                                                    <input type="radio" id="star-3" value='2' name='rating' />
+                                                    <label for='star-3'>★</label>
+
+                                                    <input type="radio" id="star-4" value='3' name='rating' />
+                                                    <label for='star-4'>★</label>
+
+                                                    <input type="radio" id="star-5" value='4' name='rating' />
+                                                    <label for='star-5'>★</label>
+                                                </div>
+                                                <div class="card-title">
+                                                    <h3><a href="shop-page.html">Combo Flower Vase</a></h3>
+                                                </div>
+                                                <div class="card-content-wrap">
+                                                    <h4><span>$17.00</span> $9.05</h4>
+                                                    <button class="btn btn-white btn-sm btn-radious-6 border-gray-btn">ADD TO CART</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{% include "elements/components/footer.twig" %}
+{% include "elements/footer.twig" %}
+</body>
+</html>

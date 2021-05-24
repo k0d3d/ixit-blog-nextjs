@@ -1,0 +1,37 @@
+//base all file import here
+//================================
+//1.all plugin css file call here
+//------------------------------
+// Bootstrap from Node_modules //
+@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
+//2.default file css call here
+//------------------------------
+@import "default/default";
+@import "default/fonts-familly";
+@import "default/typrography";
+@import "default/utilities";
+@import "../../libs/scss/owl.carousel.min.scss";
+@import "../../libs/scss/youtube-overlay.scss";
+@import "../../libs/scss/nice-select.scss";
+@import "../../libs/scss/icofont.scss";
+@import "../../libs/scss/highlight.scss";
+@import "../../libs/scss/swiper.scss";
+//3.base abstract file css call here
+//------------------------------
+@import "base_abstracts/base_mixin";
+@import "base_abstracts/base_variable";
+//4.base_components file css call here
+//------------------------------
+@import "base_components/background-color";
+@import "base_components/box-shadow";
+@import "base_components/color";
+@import "base_components/fonts";
+@import "base_components/forms";
+@import "base_components/height";
+@import "base_components/key-frame";
+@import "base_components/margin";
+@import "base_components/padding";
+@import "base_components/button";
+@import "base_components/position";
+@import "base_components/width";
+@import "base_components/border-radious";

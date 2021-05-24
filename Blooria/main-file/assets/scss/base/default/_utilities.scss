@@ -1,0 +1,120 @@
+        body {
+            font-family: var(--title-font);
+            color: var(--color-text);
+            background-color: var(--body-bg-color);
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        
+        p {
+            font-size: 17px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--color-heading);
+            font-family: var(--title-font);
+            font-weight: var(--text-semibold);
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 40px;
+        }
+        
+        h2 {
+            font-size: 36px;
+        }
+        
+        h3 {
+            font-size: 30px;
+        }
+        
+        h4 {
+            font-size: 26px;
+        }
+        
+        h5 {
+            font-size: 20px;
+        }
+        
+        h6 {
+            font-size: 16px;
+        }
+        
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            font-weight: 400;
+            color: var(--color-text);
+        }
+        
+        .heading {
+            h1 {
+                font-size: 45px;
+                line-height: 1.24;
+            }
+            h2 {
+                font-size: 40px;
+                line-height: 1.24;
+            }
+        }
+        
+        .section-heading {
+            padding-bottom: 70px;
+            h2 {
+                font-size: 36px;
+                line-height: 0.9;
+                font-weight: var(--text-bold);
+            }
+        }
+        
+        //sub title design
+        .sub-title {
+            font-size: 17px;
+            font-weight: var(--text-bold);
+            color: var(--color-Sub-heading);
+        }
+        
+        .section-padding {
+            padding: 50px 0px;
+        }
+        
+        svg {
+            max-height: 50px;
+            max-width: 50px;
+        }
+        
+        .icon-svg {
+            height: 20px;
+            width: 20px;
+        }
+        
+        .svg-orange {
+            path {
+                fill: var(--color-Sub-heading);
+            }
+        }
+        
+        .default-header {
+            position: relative !important;
+        }
+        
+        @media screen and (max-width: 767px) {
+            p {
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            h4 {
+                font-size: 23px;
+            }
+            .section-heading {
+                padding-bottom: 50px;
+            }
+        }

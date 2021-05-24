@@ -1,0 +1,89 @@
+            .account-page-banner {
+                padding: 150px 0px 70px 0px;
+            }
+            
+            .account-page-banner-content {
+                max-width: 600px;
+                h1 {
+                    font-size: 55px;
+                    padding-bottom: 30px;
+                }
+                p {
+                    padding-bottom: 40px;
+                }
+            }
+            
+            .account-mail-dtls {
+                display: flex;
+                align-items: center;
+                .account-mail {
+                    max-width: 250px;
+                    margin-right: 60px;
+                }
+                .account-plan {
+                    max-width: 150px;
+                }
+                .account-mail,
+                .account-plan {
+                    h5 {
+                        font-size: 16px;
+                        font-family: var(--title-font);
+                        font-weight: var(--text-regular);
+                        color: var(--color-heading);
+                        margin-bottom: 20px;
+                    }
+                    a,
+                    h6 {
+                        font-size: 16px;
+                        font-family: var(--title-font);
+                        font-weight: var(--text-regular);
+                        color: var(--color-Sub-heading);
+                    }
+                }
+            }
+            
+            .account-page-banner-image {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            
+            .priceing-title {
+                padding-bottom: 70px;
+            }
+            
+            @media screen and (max-width: 1199px) {
+                .account-page-banner {
+                    padding: 100px 0px 50px 0px;
+                }
+            }
+            
+            //  //MEDIA SCREEN 767px
+            @media screen and (max-width: 767px) {
+                .account-page-banner-image {
+                    justify-content: center;
+                }
+                .account-page-banner-content {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .account-mail-dtls {
+                    justify-content: center;
+                    text-align: left;
+                }
+                .priceing-title {
+                    padding-bottom: 30px;
+                }
+            }
+            
+            @media screen and (max-width: 575px) {
+                .account-page-banner {
+                    padding: 50px 0px;
+                    h1 {
+                        font-size: 35px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }

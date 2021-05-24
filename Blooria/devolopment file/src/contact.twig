@@ -1,0 +1,60 @@
+
+{% include "elements/header.twig" %}
+<!-- header area start from here-->
+{% include "elements/components/header.twig" with {'defaultHeader': 'default-header'} %}
+<!-- contact page banner from here-->
+<section class="contact-banner-area">
+    <div class="container">
+        <div class="banner-wrapper">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="contact-banner-content">
+                        <h1>Contact Us</h1>
+                        <p>Hung that found of the from diesel to the venerable, you at cleaning in coming was sign introduced attem.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-md-30">
+                    <div class="contact-from-area">
+                        <div class="contact-from-wrapper">
+                            <div class="input-name-wrapper">
+                                <input type="text" placeholder="First Name"/>
+                                <input type="text" placeholder="Last Name"/>
+                            </div>
+                            <input type="email" placeholder="enter your email"/>
+                            <textarea  placeholder="Type your comment" rows="6"></textarea>
+                            <button class="btn btn-sm btn-orange">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--subcribe section start here-->
+<section class="subscribe-area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 m-auto">
+                <div class="row align-items-center">
+                    <div class="col-md-10 m-auto">
+                        <div class="suscribe-wrapper">
+                            <div class="section-heading text-center">
+                                <h2>Newsletter</h2>
+                                <p>Subscribe to see what we're thinking & get always latest update</p>
+                            </div>
+                            <div class="subscribe-input">
+                                <input type="email" placeholder="enter your email">
+                                <button class="btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include "elements/components/footer.twig" %}
+{% include "elements/footer.twig" %}
+</body>
+</html>

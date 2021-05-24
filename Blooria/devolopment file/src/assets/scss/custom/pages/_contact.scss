@@ -1,0 +1,158 @@
+        .banner-wrapper {
+            background-image: url(../img/contact-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding: 100px 0px;
+            z-index: 1;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 50%;
+                background-color: var(--color-heading);
+                opacity: 0.4;
+                z-index: -1;
+            }
+        }
+        
+        .contact-banner-area {
+            margin: 60px 0px 100px;
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: -100px;
+                left: 0;
+                height: calc(50% + 100px);
+                width: 100%;
+                background-color: var(--color-secondary);
+                z-index: -1;
+                border-radius: 0px 10px 10px 0px;
+            }
+        }
+        
+        .contact-banner-content {
+            max-width: 470px;
+            margin-left: 180px;
+            h1 {
+                font-size: var(--heading-font);
+                padding-bottom: 10px;
+            }
+        }
+        
+        .contact-from-area {
+            max-width: 600px;
+            margin-left: 50px;
+            margin-right: 25px;
+            input,
+            textarea {
+                display: block;
+                margin-bottom: 20px;
+                width: 100%;
+                border: 1px solid var(--color-bg-three);
+                background: var(--light-white);
+                padding: 20px 30px;
+                font-size: 16px;
+                font-family: var(--title-font);
+                font-weight: var(--text-regular);
+                color: var(--color-input);
+                &:focus {
+                    transition: .3s ease;
+                    background-color: var(--light-white);
+                    border: 1px solid var(--color-Sub-heading);
+                }
+                &::placeholder {
+                    color: var(--color-input);
+                }
+            }
+            input {
+                height: 60px;
+            }
+            .input-name-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input {
+                    width: calc(50% - 15px);
+                }
+            }
+        }
+        
+        @media screen and (max-width: 1199px) {
+            .contact-banner-content {
+                margin: 0px 50px;
+            }
+        }
+        
+        @media screen and (max-width: 991px) {
+            .contact-from-area {
+                margin: 0px 15px 0px 0px;
+                padding: 0px 25px;
+                .input-name-wrapper {
+                    flex-wrap: wrap;
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .contact-banner-area {
+                margin: 25px 0px 70px;
+                &:after {
+                    bottom: -70px;
+                    height: calc(50% + 70px);
+                }
+            }
+            .contact-from-area {
+                margin: 0 auto;
+            }
+            .contact-banner-content {
+                margin: 0 auto;
+                text-align: center;
+                padding: 0px 15px;
+                h1,
+                p {
+                    color: var(--color-secondary-four);
+                }
+            }
+            .banner-wrapper {
+                padding: 50px 0px;
+                &:after {
+                    width: 100%;
+                }
+            }
+            .subscribe-area {
+                padding: 70px 0px;
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            .contact-from-area {
+                input,
+                textarea {
+                    margin-bottom: 20px;
+                }
+                input {
+                    height: 50px;
+                }
+            }
+            .contact-banner-content {
+                h1 {
+                    font-size: 35px;
+                    padding-bottom: 20px;
+                }
+            }
+            .subscribe-area {
+                padding: 50px 0px;
+                text-align: center;
+            }
+        }

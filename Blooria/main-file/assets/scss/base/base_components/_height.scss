@@ -1,0 +1,36 @@
+$height:( max-height: "max-height", min-height: "min-height", height: "height");
+// Spacing style classes
+@each $key,
+$hei in $height {
+    @for $i from 1 to 51 {
+        .#{$key}-#{$i * 10} {
+            #{$hei}: #{$i * 5}px;
+        }
+    }
+    @for $i from 1 to 21 {
+        .#{$key}-#{$i * 5}p {
+            #{$hei}: #{$i * 5}% !important;
+        }
+    }
+}
+
+// Spacing for @media Breakpoints
+$breakpoints: ( xl: 1200, lg: 992, md: 768, sm: 576);
+@each $breakkey,
+$value in $breakpoints {
+    @media screen and (max-width: #{$value}px) {
+        @each $key,
+        $hei in $height {
+            @for $i from 1 to 51 {
+                .#{$key}-#{$breakkey}-#{$i * 5} {
+                    #{$hei}: #{$i * 10}px;
+                }
+            }
+            @for $i from 1 to 21 {
+                .#{$key}-#{$i * 5}p {
+                    #{$hei}: #{$i * 5}% !important;
+                }
+            }
+        }
+    }
+}

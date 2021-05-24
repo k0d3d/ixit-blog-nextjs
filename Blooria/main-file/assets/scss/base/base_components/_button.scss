@@ -1,0 +1,144 @@
+.btn {
+    border: 0px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: var(--text-medium);
+    font-family: var(--title-font);
+    line-height: 1.4;
+    border-radius: 0px;
+    transition: 0.5s ease-in !important;
+    white-space: nowrap;
+    &:focus {
+        box-shadow: unset;
+    }
+}
+
+.btn-sm {
+    padding: 10px 30px;
+}
+
+.btn-radious-6 {
+    border-radius: 6px;
+    &:after {
+        border-radius: 6px !important;
+    }
+}
+
+@mixin btn-shatter( $background: $btn-purple-gradient, $color: $white, $border-radious: 0px) {
+    position: relative;
+    z-index: 1;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $background;
+        z-index: -1;
+        transition: 0.3s ease-in;
+        border-radius: $border-radious;
+        transform: scaleX(0);
+        transform-origin: 0% bottom;
+    }
+    &:hover {
+        color: $color !important;
+        &:after {
+            transform-origin: 100% bottom;
+            transform: scaleX(1);
+        }
+    }
+}
+
+@mixin btn-scale( $background: $btn-purple-gradient, $color: $white, $border-radious: 0px) {
+    position: relative;
+    z-index: 1;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $background;
+        z-index: -1;
+        border-radius: $border-radious;
+        transform: scaleX(0);
+        transition: .2s ease-in;
+    }
+    &:hover {
+        color: $color !important;
+        transition: 0.2s ease-in;
+        &:after {
+            transform: scaleX(1);
+            transition: .4s ease-in;
+            box-shadow: var(--black-shadow);
+        }
+    }
+}
+
+.btn-white {
+    background-color: var(--color-input);
+    color: var(--color-heading);
+    @include btn-shatter($background: var(--color-Sub-heading), $color: var(--color-input), $border-radious: 6px)
+}
+
+.btn-black {
+    background-color: var(--color-heading);
+    color: var(--color-input);
+    @include btn-shatter($background: var(--color-Sub-heading), $color: var(--color-input), $border-radious: 6px)
+}
+
+.btn-orange {
+    background-color: var(--color-Sub-heading);
+    color: var(--color-heading);
+    @include btn-scale($background: var(--color-input), $color: var(--color-Sub-heading))
+}
+
+.btn-gray {
+    background-color: var(--color-text);
+    color: var(--color-input);
+    transition: .1s ease !important;
+    @include btn-scale($background: var(--color-Sub-heading), $color: var(--color-input), $border-radious: 6px)
+}
+
+.border-gray-btn {
+    border: 1px solid var(--border-color);
+    &:hover {
+        border-color: transparent;
+    }
+}
+
+.badge {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: var(--text-regular);
+    font-family: var(--title-font);
+    background-color: var(--menu-color);
+    color: var(--color-input);
+    border-radius: 5px;
+}
+
+.badge-orange {
+    background-color: var(--color-yellow-deep);
+    transition: .5s ease;
+    &:hover {
+        background-color: darken(#FFAF29, 10%);
+    }
+}
+
+.badge-danger {
+    background-color: var(--red2);
+    transition: .5s ease;
+    &:hover {
+        background-color: darken(#F34C4C, 10%);
+    }
+}
+
+.badge-sucess {
+    background-color: var(--paste2);
+    transition: .5s ease;
+    &:hover {
+        background-color: darken(#35C292, 10%);
+    }
+}

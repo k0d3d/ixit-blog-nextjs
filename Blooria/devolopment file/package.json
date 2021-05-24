@@ -1,0 +1,46 @@
+{
+    "name": "blooria",
+    "version": "1.0.0",
+    "description": "Minimal Blog and Magazine HTML Template with Ecommerce",
+    "main": "index.js",
+    "scripts": {
+        "watch": "gulp watch",
+        "gulp": "gulp",
+        "serve": "live-server dist --wait=0",
+        "sass-build": "sass --watch src/assets/scss:dist/assets/css --style compressed",
+        "start": "concurrently \"npm run watch\" \"npm run serve\" \"npm run sass-build\" --names \"🍺,💄,🌐\" --prefix name",
+        "build": "concurrently \"npm run gulp\" --names \"🍺,💄\" --prefix name",
+        "push": "git add . && git commit -m \"commit message\" && git push origin master",
+        "pull": "git pull origin master"
+    },
+    "author": "Electron Themes",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^3.6.1",
+        "gulp": "^3.9.1",
+        "gulp-cssbeautify": "^1.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-watch": "^5.0.0"
+    },
+    "dependencies": {
+        "@chenfengyuan/datepicker": "^1.0.9",
+        "bootstrap": "^4.4.1",
+        "chart.js": "^2.9.3",
+        "concurrently": "^3.6.1",
+        "gulp-file-include": "^2.0.1",
+        "gulp-html-beautify": "^1.0.1",
+        "gulp-prettify": "^0.5.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-twig": "^1.2.0",
+        "jquery": "^3.4.1",
+        "jquery.nicescroll": "^3.7.6",
+        "line-awesome": "^1.3.0",
+        "live-server": "^1.2.0",
+        "node-sass": "^4.9.3",
+        "npm": "^6.9.0",
+        "popper.js": "^1.16.0",
+        "select2-bootstrap-theme": "0.1.0-beta.10",
+        "slick-carousel": "^1.8.1"
+    }
+}

@@ -1,0 +1,181 @@
+.stories-card-img {
+    position: relative;
+    .card-img-title {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-family: var(--title-font);
+        font-size: 14px;
+        color: var(--color-heading);
+        display: block;
+        padding: 9px 15px;
+        border-radius: 6px;
+        transition: .5s ease;
+        line-height: 1;
+        background-color: var(--body-bg-color);
+    }
+}
+
+.stories-card-content,
+.single-stories-card-content {
+    .sub-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        .card-sub-title {
+            color: var(--color-Sub-heading);
+            font-size: 17px;
+            font-weight: var(--text-medium);
+            padding-top: 10px;
+        }
+        .card-date {
+            font-size: 15px;
+            line-height: 1.4;
+            font-weight: var(--text-regular);
+            font-family: var(--title-font);
+            color: var(--color-text);
+            padding-top: 10px;
+        }
+    }
+    .card-title {
+        margin-bottom: 0px;
+        display: block;
+        a {
+            color: var(--color-heading);
+        }
+    }
+    .card-content {
+        font-size: 16px;
+        font-weight: var(--text-regular);
+        color: var(--color-text);
+    }
+    &:hover {
+        .card-title {
+            a {
+                color: var(--color-Sub-heading);
+                transition: .4s ease;
+            }
+        }
+    }
+}
+
+.single-stories-card-content {
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.87);
+    -webkit-box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.3);
+    -moz-box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.87);
+    .sub-title-wrapper {
+        padding-bottom: 15px;
+        .card-sub-title {
+            padding-top: 0px;
+        }
+        .card-date {
+            padding-top: 0px;
+        }
+    }
+    .card-title {
+        padding-bottom: 10px;
+    }
+}
+
+// side img card style here
+.side-img-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .side-card-img {
+        min-width: 250px;
+        margin-right: 30px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .card-title {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        display: block;
+        a {
+            color: var(--color-heading);
+        }
+    }
+    &:hover {
+        .card-title {
+            a {
+                color: var(--color-Sub-heading);
+                transition: .4s ease;
+            }
+        }
+    }
+}
+
+.stories-card-img {
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+.single-stories-card {
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.87);
+    -webkit-box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.3);
+    -moz-box-shadow: 1px 1px 9px -4px rgba(54, 54, 54, 0.87);
+    height: 100%;
+}
+
+.stories-card-content {
+    padding: 5px 25px 25px;
+}
+
+.side-card-content {
+    max-width: 445px;
+}
+
+@media screen and (max-width:1199px) {
+    .side-img-card-wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .side-card-content {
+        margin-top: 20px;
+    }
+    .side-img-card-wrapper .side-card-img {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .side-card-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .side-img-card-wrapper {
+        max-width: calc(50% - 15px);
+    }
+    .side-card-content {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 575px) {
+    .side-card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .side-img-card-wrapper {
+        max-width: 100%;
+    }
+    .side-card-content {
+        max-width: 500px;
+    }
+}

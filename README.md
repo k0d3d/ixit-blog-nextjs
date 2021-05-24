@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is a blog app built using Next.js. 
+The idea starts out as a blog app but it will also be a playground where I can test my apps and efforts improving in 
+the blockchain space. 
+
+I plan to try out ideas like 
+- Abitrage
+- Simple Price Tickers
+- Mint Posts as NFTs
+- Selling NFT Collections which should music and file related.
+- Using a Metamask or Eth address to unlock content. 
+- 
+
+
 
 ## Getting Started
 

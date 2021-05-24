@@ -1,0 +1,236 @@
+    [data-theme='dark'] {
+        .sign-in-area {
+            ul {
+                li {
+                    svg {
+                        path {
+                            fill: var( --color-text);
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: #8e8e8e;
+        }
+        .banner-img-area {
+            .banner-img img {
+                background-color: var(--body-bg-color);
+            }
+        }
+        .tag-title {
+            color: var(--color-text);
+        }
+        .tag-card {
+            border-color: rgba(255, 255, 255, 0.8);
+            color: var(--color-light-dark);
+        }
+        .footer-top-area {
+            &:after {
+                background-color: var(--footer-overlay);
+            }
+        }
+        .subscribe-area {
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: var(--footer-overlay);
+                z-index: -1;
+            }
+        }
+        .subscribe-area {
+            .section-heading {
+                p {
+                    color: #8e8e8e;
+                }
+            }
+            .subscribe-input {
+                input {
+                    background-color: var(--color-secondary);
+                    &::placeholder {
+                        color: var(--color-bg-three);
+                    }
+                }
+            }
+        }
+        .stories-card-img {
+            .card-img-title {
+                background-color: var(--color-text);
+                color: var(--body-bg-color);
+            }
+        }
+        .footer-logo-area {
+            p {
+                color: #c7c7c7;
+            }
+        }
+        .footer-top-area {
+            .footer-menu-bar {
+                ul {
+                    li {
+                        a {
+                            color: var(--color-text2);
+                            &:hover {
+                                color: var(--color-Sub-heading);
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-area {
+                .contact-address {
+                    a,
+                    p,
+                    h4 {
+                        color: var(--color-text2);
+                    }
+                    a {
+                        &:hover {
+                            color: var(--color-Sub-heading);
+                        }
+                    }
+                }
+                .contact-app-link {
+                    a {
+                        color: var(--color-text2);
+                        &:hover {
+                            color: var(--color-Sub-heading);
+                        }
+                    }
+                }
+            }
+            .social-icon {
+                ul {
+                    li {
+                        a {
+                            svg {
+                                path {
+                                    fill: var(--color-text2);
+                                }
+                                &:hover {
+                                    path {
+                                        fill: var(--color-Sub-heading);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nice-select-wrap {
+            ul {
+                a {
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .border-gray-btn {
+            color: #ffffff;
+            &:hover {
+                border-color: transparent;
+            }
+        }
+        .single-shop-card {
+            &:hover {
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(144, 141, 141, 0.2);
+                -moz-box-shadow: 0px 0px 15px 0px rgba(144, 141, 141, 0.2);
+                box-shadow: 0px 0px 15px 0px rgba(144, 141, 141, 0.2);
+            }
+        }
+        .dark-overlay {
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background-color: var(--footer-overlay);
+            }
+        }
+        .checkout-dtls {
+            box-shadow: none;
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background-color: var(--color-secondary);
+                opacity: 0.9;
+            }
+        }
+        .btn-gray {
+            background-color: var(--color-text2);
+            color: var(--color-text);
+        }
+        .badge {
+            color: var(--color-text);
+        }
+        .suscribe-content-wrapper,
+        .priceing-single-btm {
+            .btn-orange {
+                &:hover {
+                    background-color: transparent;
+                    &:after {
+                        background-color: var(--body-bg-color);
+                    }
+                }
+            }
+        }
+        body {
+            &:after {
+                background-color: var(--body-bg-color);
+            }
+        }
+        .banner-wrapper {
+            &:after {
+                width: 100%;
+                background-color: var(--color-secondary);
+                opacity: 0.8;
+            }
+        }
+        .contact-from-area {
+            input,
+            textarea {
+                color: var(--color-text);
+                &::placeholder {
+                    color: var(--color-text2);
+                }
+            }
+        }
+        .post-full-content {
+            ol,
+            ul {
+                li {
+                    color: #b9b9b9;
+                }
+            }
+            ul {
+                li {
+                    &:after {
+                        background-color: #b9b9b9;
+                    }
+                }
+            }
+            blockquote {
+                color: #b9b9b9;
+            }
+        }
+    }

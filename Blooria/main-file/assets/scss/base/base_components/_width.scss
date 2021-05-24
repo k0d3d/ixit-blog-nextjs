@@ -1,0 +1,36 @@
+$width:( mx-width: "max-width", width: "width", min-width: "min-width");
+// Spacing style classes
+@each $key,
+$space in $width {
+    @for $i from 1 to 51 {
+        .#{$key}-#{$i * 5} {
+            #{$space}: #{$i * 5}px !important;
+        }
+    }
+    @for $i from 1 to 21 {
+        .#{$key}-#{$i * 5}p {
+            #{$space}: #{$i * 5}% !important;
+        }
+    }
+}
+
+// Spacing for @media Breakpoints
+$breakpoints: ( xl: 1200, lg: 992, md: 768, sm: 576);
+@each $breakkey,
+$value in $breakpoints {
+    @media screen and (max-width: #{$value}px) {
+        @each $key,
+        $space in $width {
+            @for $i from 1 to 51 {
+                .#{$key}-#{$breakkey}-#{$i * 5} {
+                    #{$space}: #{$i * 5}px !important;
+                }
+            }
+            @for $i from 1 to 21 {
+                .#{$key}-#{$breakkey}-#{$i * 5}p {
+                    #{$space}: #{$i * 5}% !important;
+                }
+            }
+        }
+    }
+}
