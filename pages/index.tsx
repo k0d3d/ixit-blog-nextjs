@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "../components/header";
 import FeaturedPost from '../components/homepage/featured-post'
+import LatestPost from '../components/homepage/latest-post'
+import CtaPost from '../components/homepage/cta-post'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
 
       <Header />
       <FeaturedPost />
+      <LatestPost />
+      <CtaPost />
     </div>
   );
 }
