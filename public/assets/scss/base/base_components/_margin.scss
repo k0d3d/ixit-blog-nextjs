@@ -1,0 +1,54 @@
+$spacing1:( mt: "margin-top", mb: "margin-bottom", ml: "margin-left", mr: "margin-right");
+// Spacing style classes
+@each $key1,
+$space1 in $spacing1 {
+    @for $i from 0 to 21 {
+        .#{$key1}-#{$i * 5} {
+            #{$space1}: #{$i * 5}px !important;
+        }
+    }
+}
+
+$margin:( m:"margin");
+@each $key1,
+$space1 in $margin {
+    @for $i from 0 to 21 {
+        .#{$key1}x-#{$i * 5} {
+            #{$space1}-left: #{$i * 5}px !important;
+            #{$space1}-right: #{$i * 5}px !important;
+        }
+        .#{$key1}y-#{$i * 5} {
+            #{$space1}-top: #{$i * 5}px !important;
+            #{$space1}-bottom: #{$i * 5}px !important;
+        }
+    }
+}
+
+// Spacing for @media Breakpoints
+$breakpoints1: ( xl: 1350, lg: 1199, md: 991, sm: 767, xs: 575);
+@each $breakkey1,
+$value1 in $breakpoints1 {
+    @media screen and (max-width: #{$value1}px) {
+        @each $key1,
+        $space1 in $margin {
+            @for $i from 0 to 21 {
+                .#{$key1}x-#{$breakkey1}-#{$i * 5} {
+                    #{$space1}-left: #{$i * 5}px !important;
+                    #{$space1}-right: #{$i * 5}px !important;
+                }
+                .#{$key1}y-#{$breakkey1}-#{$i * 5} {
+                    #{$space1}-top: #{$i * 5}px !important;
+                    #{$space1}-bottom: #{$i * 5}px !important;
+                }
+            }
+        }
+        @each $key1,
+        $space1 in $spacing1 {
+            @for $i from 0 to 21 {
+                .#{$key1}-#{$breakkey1}-#{$i * 5} {
+                    #{$space1}: #{$i * 5}px !important;
+                }
+            }
+        }
+    }
+}

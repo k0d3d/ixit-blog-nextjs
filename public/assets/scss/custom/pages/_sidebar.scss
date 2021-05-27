@@ -1,0 +1,179 @@
+    .side-bar-wrapper {
+        position: sticky;
+        top: 100px;
+        background-color: var(--color-secondary);
+        padding: 25px;
+    }
+    
+    .latest-single-post {
+        padding: 25px 0px;
+        border-bottom: 1px solid var(--table-border2);
+        display: flex;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    .latest-single-img {
+        min-width: 90px;
+    }
+    
+    .latest-single-content {
+        padding-left: 20px;
+        .latext-scontent-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            h5 {
+                font-size: 17px;
+                font-weight: var(--text-medium);
+                color: var(--color-Sub-heading);
+                padding-right: 25px;
+                padding-bottom: 5px;
+            }
+            span {
+                display: inline-block;
+                font-size: var(--card-date);
+                font-weight: var(--text-medium);
+                color: var(--color-light);
+                padding-bottom: 5px;
+            }
+        }
+        .latext-scontent {
+            h4 {
+                a {
+                    font-size: var(--sub-title-font);
+                    font-weight: var(--text-medium);
+                    color: var(--color-heading);
+                }
+            }
+        }
+    }
+    
+    .pro-add {
+        margin: 50px 0px 70px;
+        padding: 50px 0px;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        img,
+        svg {
+            position: absolute;
+            bottom: 0;
+            right: -40px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    .categories-area {
+        border-top: 1px solid var(--table-border2);
+        border-bottom: 1px solid var(--table-border2);
+        padding: 35px 0px 50px;
+        h4 {
+            padding-bottom: 20px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                width: 50%;
+                padding: 10px 10px 10px 0px;
+                a {
+                    display: block;
+                    font-size: 17px;
+                    font-weight: var(--text-semibold);
+                    color: var(--color-heading);
+                    transition: .4s ease;
+                    &:hover {
+                        color: var(--color-Sub-heading);
+                    }
+                }
+            }
+        }
+    }
+    
+    .instagram-area {
+        padding-top: 50px;
+        h4 {
+            padding-bottom: 25px;
+        }
+        .instra-wrap {
+            position: relative;
+        }
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            img,
+            svg {
+                margin-right: 10px;
+                height: 24px;
+                width: 24px;
+                path,
+                circle {
+                    fill: #1A2030;
+                    transition: .4s ease;
+                }
+            }
+            &:hover {
+                svg {
+                    path,
+                    circle {
+                        fill: var(--color-Sub-heading);
+                    }
+                }
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: calc(100% / 3 - 10px);
+                margin: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    //  //MEDIA SCREEN 1350px
+    @media screen and (max-width: 991px) {
+        .categories-area {
+            border-top: none;
+            padding-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .instagram-area {
+            button {
+                padding: 8px 15px;
+                font-size: 17px;
+                img,
+                svg {
+                    height: 15px;
+                    width: 15px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        .categories-area {
+            border-top: 1px solid var(--table-border2);
+            padding: 35px 0px 50px;
+        }
+    }

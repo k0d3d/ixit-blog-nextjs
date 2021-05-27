@@ -1,0 +1,32 @@
+    .tag-banner-content {
+        padding: 150px 25px 70px;
+        max-width: 750px;
+        margin: 0 auto;
+        h1 {
+            font-size: var(--heading-font);
+            padding-bottom: 15px;
+        }
+    }
+    
+    .tag-list-area {
+        padding: 100px 0px;
+        background-color: var(--color-secondary);
+    }
+    
+    @media screen and (max-width: 767px) {
+        .tag-banner-content {
+            padding: 100px 25px 50px;
+        }
+        .tag-list-area {
+            padding: 50px 0px;
+            margin-bottom: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        .tag-banner-content {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }

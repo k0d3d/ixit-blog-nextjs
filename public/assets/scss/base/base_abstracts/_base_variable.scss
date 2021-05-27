@@ -1,0 +1,110 @@
+//font weight
+    :root {
+    --title-font: 'Mulish', sans-serif;
+    --text-bold: bold;
+    --text-semibold: 600;
+    --text-medium: 500;
+    --text-regular: 400;
+    --text-light: 300;
+}
+
+// Color
+    :root {
+    --input-white: #ffffff;
+    --menu-color: #070615;
+    --color-Sub-heading: #FFAF29;
+    --color-lignt-Sub-heading: darken(#FFAF29, 10%);
+    --color-heading: #1A2030;
+    --color-heading2: #1A2030;
+    --color-text: #666666;
+    --color-text2: #666666;
+    --color-yellow-deep: #faa10c;
+    --color-input: #FFF;
+    --body-bg-color: #fff;
+    --color-secondary: #FAFAFA;
+    --color-bg-three: #DDDEDE;
+    --color-secondary-three: #fff;
+    --color-secondary-four: #F9F9F9;
+    --color-account-border: #efefef;
+    --color-featured-image-loading: var(--color-white);
+    --color-light: #696969;
+    --color-light-dark: #343B4F;
+    --overlay: #2E2E2E;
+    --border-color: #DEDDDD;
+    --twitter-color: #03A9F4;
+    --light-white: rgba(255, 255, 255, 0.1);
+    --light-white2: rgba(255, 255, 255, 0.8);
+    --light-black: rgba(0, 0, 0, 0.05);
+    --light-black2: rgba(0, 0, 0, 0.7);
+    --light-white3: rgba(255, 255, 255, 0.4);
+    --table-border: rgba(26, 32, 48, 0.16);
+    --table-border2: rgba(26, 32, 48, 0.09);
+    --red: #E80000;
+    --red2: #F34C4C;
+    --ired: #AA7C9A;
+    --yellow: #E3D4B3;
+    --gray: #E3E4E6;
+    --paste: #8DE4B8;
+    --paste2: #35C292;
+    --light-orange: rgba(255, 175, 41, 0.05)
+}
+
+    :root {
+    --menu-font: 16px;
+    --heading-font: 40px;
+    --section-title-font: 36px;
+    --sub-title-font: 20px;
+    --content-font: 17px;
+    --card-title: 26px;
+    --card-sub-title: 17px;
+    --card-date: 15px;
+    --badge: 14px;
+}
+
+@media screen and (max-width: 767px) {
+        :root {
+        --menu-font: 16px;
+        --heading-font: 30px;
+        --section-title-font: 36px;
+        --sub-title-font: 18px;
+        --content-font: 16px;
+        --card-title: 20px;
+        --card-sub-title: 15px;
+        --card-date: 15px;
+        --badge: 14px;
+    }
+}
+
+// data-theme colors
+[data-theme='dark'] {
+    --body-bg-color: #070615;
+    --color-text: #ffffff;
+    --color-text2: #DDDEDE;
+    --color-secondary: #161B2A;
+    --menu-color: #ffffff;
+    --color-light-dark: #efefef;
+    --color-heading: #ffffff;
+    --color-input: #161B2A;
+    --color-account-border: #070615;
+    --input-white: #161B2A;
+    --footer-overlay: rgba(0, 0, 0, 0.8);
+    --color-bg-three: #8e8e8e;
+    --color-text2: #8e8e8e;
+    --border-color: #5a5a5a;
+    --light-black: rgba(177, 177, 177, 0.2);
+    --table-border: rgba(255, 255, 255, 0.2);
+    --table-border2: rgba(255, 255, 255, 0.1);
+    --light-white: rgba(0, 0, 0, 0.3);
+}
+
+// transition root variable
+    :root {
+    --cubic-bezier: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    --ease-in-out: all 400ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+// shadow root variable
+    :root {
+    --black-shadow: 0px 0px 13px -7px rgba(0, 0, 0, 0.43);
+    --light-black-shadow: 0px 0px 13px -7px rgba(0, 0, 0, 0.1);
+}

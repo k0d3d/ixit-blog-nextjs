@@ -1,0 +1,63 @@
+@mixin top-to-bottom ($bg-color:var(--color-secondary)) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: left top;
+    background-color: $bg-color;
+    z-index: 9999;
+    // transition support
+    -webkit-transition: var(--ease-in-out);
+    -moz-transition: var(--ease-in-out);
+    -o-transition: var(--ease-in-out);
+    transition: var(--ease-in-out);
+    animation: top-to-bottom 1.5s 1;
+}
+
+@mixin blank($bg-color:var(--body-bg-color)) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color;
+    pointer-events: none;
+    opacity: 0;
+    animation: blank .5s 1 ease-in-out;
+    z-index: 9999;
+}
+
+// top-to-bottom keyframe
+@keyframes top-to-bottom {
+    0% {
+        transform: scaleY(0);
+        transform-origin: left top;
+    }
+    50% {
+        transform: scaleY(1);
+        transform-origin: left top;
+    }
+    51% {
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: scaleY(0);
+        transform-origin: left bottom;
+    }
+}
+
+// blank keyframe
+@keyframes blank {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// animation: animation-name 2s infinite linear alternate;

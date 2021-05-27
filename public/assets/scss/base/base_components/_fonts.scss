@@ -1,0 +1,36 @@
+//    font size class example [text-10:{font-size: 10px;}]
+@for $i from 9 to 20 {
+    .text-#{$i + 1} {
+        font-size: #{$i + 1}px;
+    }
+}
+
+$font-weight:(text-bold:var(--text-bold), text-semibold:var(--text-semibold), text-medium:var(--text-medium), text-regular:var(--text-regular), text-light:var(--text-light));
+@each $text,
+$weight in $font-weight {
+    @for $i from 9 to 20 {
+        .#{$text}-#{$i + 1} {
+            font-size: #{$i + 1}px;
+            font-weight:#{$weight};
+            font-style: normal;
+        }
+    }
+}
+
+// Spacing for @media Breakpoints
+$breakpoints: ( xl: 1200, lg: 992, md: 768, sm: 576);
+@each $breakkey,
+$value in $breakpoints {
+    @media screen and (max-width: #{$value}px) {
+        @each $text,
+        $weight in $font-weight {
+            @for $i from 9 to 20 {
+                .#{$text}-#{$breakkey}-#{$i + 1} {
+                    font-size: #{$i + 1}px;
+                    font-weight:#{$weight};
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
