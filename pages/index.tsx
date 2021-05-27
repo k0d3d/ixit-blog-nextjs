@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/header";
+import FeaturedPost from '../components/homepage/featured-post'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <FeaturedPost />
     </div>
   );
 }
