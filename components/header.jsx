@@ -8,44 +8,16 @@ export default function Header(props) {
         <div className="header-wrapper d-flex align-items-center justify-content-between">
           {/*header-logo*/}
           <div className="header-logo">
-            <a href="homepage.html">iXit</a>
+            <a href="/">iXit</a>
           </div>
           {/* menu-bar */}
           <div className="menu-bar">
             <ul className="d-flex align-items-center justify-content-between">
-              <li><a href="#">Home</a>
-                <ul className="dropdown">
-                  <li><a href="homepage.html">Home</a></li>
-                  <li><a href="homepage-sidebar.html">Home With Sidebar</a></li>
-                  <li><a href="homepage-minimal.html">Home Minimal</a></li>
-                  <li><a href="home-sidebar-minimal.html">Home Minimal Two</a></li>
-                </ul>
+              <li><a href="#">Good morning</a>
               </li>
-              <li><a href="author.html">Authors</a></li>
-              <li><a href="#">Shop</a>
-                <ul className="dropdown">
-                  <li><a href="shop-page.html">Product</a></li>
-                  <li><a href="product-details.html">Product Details</a></li>
-                  <li><a href="card.html">Cart</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                  <li><a href="account-two.html">Account</a></li>
-                </ul>
+              <li><a href="author.html">Posts</a></li>
+              <li><a href="#">Draws</a>
               </li>
-              <li><a href="#">Pages</a>
-                <ul className="dropdown">
-                  <li><a href="premium-page.html"> Premium Page</a></li>
-                  <li><a href="single-author.html">Single Author</a></li>
-                  <li><a href="style-guide.html">Style Guide</a></li>
-                  <li><a href="single-blog.html">Single Blog</a></li>
-                  <li><a href="single-tag.html">Single Tag</a></li>
-                  <li><a href="single-left-sidebar.html">Single With Left sidebar</a></li>
-                  <li><a href="single-right-sidebar.html">Single With Right sidebar</a></li>
-                </ul>
-              </li>
-              <li><a href="membership.html">Membership</a></li>
-              <li><a href="tag-page.html">Tag</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="account-page.html">Account</a></li>
             </ul>
           </div>
           {/* sign-in area */}
