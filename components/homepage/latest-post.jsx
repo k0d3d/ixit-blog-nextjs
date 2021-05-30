@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function LatestPost (props) {
   return (
@@ -6,9 +7,17 @@ export default function LatestPost (props) {
   <div className="container">
     <div className="row">
       <div className="col-lg-8 m-auto">
-        <div className="single-blog-banner-wrapper">
+        <div className="single-blog-banner-wrapper" >
           <h5>Lifestyle</h5>
-          <h1>A muscial gift on bangla noboborsha from Armeen Musa</h1>
+          <h1>
+            <Link href={{
+               pathname: 'posts/[post-slug]',
+               query: { "post-slug": 'blah' }
+            }}>
+              A muscial gift on bangla noboborsha from Armeen Musa
+            </Link>
+          
+          </h1>
           <p>Hung that found of the from diesel to the venerable, you what you spare at cleaning in coming was sign introduced attempt, then would was try make brown.</p>
           <div className="single-blog-social d-flex align-items-center justify-content-between">
             <div className="published-dtls-area d-flex align-items-center">

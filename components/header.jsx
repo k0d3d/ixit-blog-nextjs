@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 
 export default function Header(props) {
@@ -15,7 +17,7 @@ export default function Header(props) {
             <ul className="d-flex align-items-center justify-content-between">
               <li><a href="#">Good morning</a>
               </li>
-              <li><a href="author.html">Posts</a></li>
+              <li><Link href="/posts">Posts</Link></li>
               <li><a href="#">Draws</a>
               </li>
             </ul>
@@ -24,7 +26,7 @@ export default function Header(props) {
           <div className="sign-in-area">
             <ul className="d-flex align-items-center justify-content-between">
               <li className="popup"><img src="assets/img/svg/search.svg" alt /></li>
-              <li className="dark-light"><img src="assets/img/svg/dark-light.svg" alt /></li>
+              <li className="dark-light"><img src="assets/img/svg/dark-light.svg"  /></li>
               <li className="sign-click relative">Sign in
             {/* sign-in dropdawn */}
                 <div className="sign-in-card">
@@ -32,7 +34,7 @@ export default function Header(props) {
                   <p>Sign in to get personalized story recommendations, ollow authors and topics you love, and interact with stories.</p>
                   <div className="input-group-icon radious-6 mb-30">
                     <input type="email" placeholder="Type your email..." />
-                    <img src="assets/img/svg/mail-sign.svg" alt />
+                    <img src="assets/img/svg/mail-sign.svg"  />
                   </div>
                   <div className="sign-link">
                     <p>Don't have an account?</p>
@@ -44,10 +46,10 @@ export default function Header(props) {
                 {/*mobile menu icon*/}
                 <div className="menu-toggole">
                   <span className="menu-show comon-tab">
-                    <img src="assets/img/svg/toggle.svg" alt />
+                    <img src="assets/img/svg/toggle.svg"  />
                   </span>
                   <span className="menu-close comon-tab">
-                    <img src="assets/img/svg/close.svg" alt />
+                    <img src="assets/img/svg/close.svg"  />
                   </span>
                 </div>
               </li>
@@ -59,7 +61,7 @@ export default function Header(props) {
       <div className="search-popup-area">
         <div className="search-option">
           <div className="search-box">
-            <img src="assets/img/svg/search.svg" alt />
+            <img src="assets/img/svg/search.svg"  />
             <input id="search" name="search" type="text" data-list=".data-list" placeholder="Type your keywords..." />
           </div>
           <div className="data-list-wrapper">
@@ -72,7 +74,7 @@ export default function Header(props) {
                     </div>
                     <p>Read our top seven health benefits of fishing to learn why, whether you're a match angler or a weekend hobbyist.</p>
                   </div>
-                  <img src="assets/img/svg/arrow-left.svg" alt />
+                  <img src="assets/img/svg/arrow-left.svg" />
                 </a>
               </li>
               <li>
@@ -83,7 +85,7 @@ export default function Header(props) {
                     </div>
                     <p>Muay Thai (Thai boxing) is the most popular contact sport in Thailand, and a pillar of Thai culture, so much so that for years the Thai government has been asking, unsuccessfully, for it to be included as an Olympic sport. </p>
                   </div>
-                  <img src="assets/img/svg/arrow-left.svg" alt />
+                  <img src="assets/img/svg/arrow-left.svg"  />
                 </a>
               </li>
               <li>
@@ -94,7 +96,7 @@ export default function Header(props) {
                     </div>
                     <p>Many parents are tired of the pink and blue divide in the toy aisles. Just last month, the White House held a conference in toys and media, with many toy manufacturers and experts attending. After feedback, Target announced in 2015 that it would get rid of signs labeling toys for boys or for girls</p>
                   </div>
-                  <img src="assets/img/svg/arrow-left.svg" alt />
+                  <img src="assets/img/svg/arrow-left.svg"  />
                 </a>
               </li>
               <li>
@@ -105,14 +107,14 @@ export default function Header(props) {
                     </div>
                     <p>The first thing I do before starting an illustration is to browse through my folder of inspiration. Inside are plenty of sub-folders, containing images of lighting, faces, human figures, clothing, illustrations from my favourite artists, animals, caterpillars, flowers and plenty more besides.</p>
                   </div>
-                  <img src="assets/img/svg/arrow-left.svg" alt />
+                  <img src="assets/img/svg/arrow-left.svg"  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="popup-close-icon">
-          <img src="assets/img/svg/close-icon.svg" alt />
+          <img src="assets/img/svg/close-icon.svg"  />
         </div>
       </div>
     </header>

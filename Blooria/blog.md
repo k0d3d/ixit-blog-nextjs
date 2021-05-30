@@ -31,4 +31,4 @@ So for this website, my goal is to get users and visitors to read the blog entry
 I also want users to purchase the post as an NFT. 
 I also want users to purchase my coins 
 I want users to subscribe to the blog. 
-I want users to 
+I want users to get paid for reading an article 
