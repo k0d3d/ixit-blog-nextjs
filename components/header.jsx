@@ -25,7 +25,7 @@ export default function Header(props) {
           {/* sign-in area */}
           <div className="sign-in-area">
             <ul className="d-flex align-items-center justify-content-between">
-              <li className="popup"><img src="assets/img/svg/search.svg" alt /></li>
+              <li className="popup"><img src="assets/img/svg/search.svg" /></li>
               <li className="dark-light"><img src="assets/img/svg/dark-light.svg"  /></li>
               <li className="sign-click relative">Sign in
             {/* sign-in dropdawn */}

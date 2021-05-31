@@ -1,3 +1,5 @@
+import React from 'react'
+
 import FeaturedPost from '../components/homepage/featured-post'
 import LatestPost from '../components/homepage/latest-post'
 import CtaPost from '../components/homepage/cta-post'

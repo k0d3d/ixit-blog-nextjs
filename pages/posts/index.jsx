@@ -8,7 +8,7 @@ export default function Posts() {
   const router = useRouter()
   const { pageSlug } = router.query
   return (
-    <DefaultPageLayout >
+    <DefaultPageLayout title="All Posts" >
       <PostArchive />
     </DefaultPageLayout>
   )
