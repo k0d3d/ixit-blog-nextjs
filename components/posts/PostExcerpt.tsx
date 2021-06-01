@@ -1,7 +1,8 @@
 import React from "react";
 import { IPosts } from "../../domains/Posts";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PostTitle } from "./PostTitle";
+import { PostImage } from "./PostImage";
+
 
 export function PostExcerpt(post: IPosts) {
   return (
@@ -14,12 +15,7 @@ export function PostExcerpt(post: IPosts) {
       <div className="row">
         <div className="col-12">
           <div className="post-thumb">
-            {post.featuredImage ? (
-              // @todo use cdn
-            <LazyLoadImage src={process.env.NEXT_PUBLIC_API_HOST + post.featuredImage.url} />
-            ) : (
-              <LazyLoadImage src="/assets/img/single-blog/post-thum.jpg" />
-            )}
+            <PostImage featuredImage={post.featuredImage} />
           </div>
         </div>
       </div>

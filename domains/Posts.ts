@@ -1,18 +1,15 @@
-export interface IPosts extends QueryResult {
+export interface IPosts extends IQueryResult {
   content: string;
-  featuredImage: {
-    url: string
-    height: number
-    width: number
-  };
+  featuredImage: IPostFeaturedImage
   title: string;
   category: IPostsCategory;
   created_at: string;
   id: number;
   published_at: string;
   updated_at: string;
-  author: PostAuthor;
+  author: IPostAuthor;
   subTitle: string;
+  postSlug: string
 }
 
 export interface IPostsCategory {
@@ -23,12 +20,12 @@ export interface IPostsCategory {
   created_at: string;
 }
 
-interface QueryResult {
+interface IQueryResult {
   nextCursor: unknown;
   prevCursor: unknown;
 }
 
-export interface PostAuthor {
+export interface IPostAuthor {
   id: number;
   username: string;
   email: string;
@@ -42,3 +39,9 @@ export interface PostAuthor {
   created_at: string;
   updated_at: string;
 }
+
+export interface IPostFeaturedImage {
+  url: string
+  height: number
+  width: number
+};
