@@ -21,7 +21,7 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": "off"
+        "@typescript-eslint/explicit-module-boundary-types": "on"
     },
     "ignorePatterns": "**/*.js*"
 };

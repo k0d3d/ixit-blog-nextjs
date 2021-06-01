@@ -6,10 +6,12 @@ import { useRouter } from 'next/router'
 
 export default function Posts() {
   const router = useRouter()
-  const { pageSlug } = router.query
-  return (
-    <DefaultPageLayout title="All Posts" >
-      <PostArchive />
-    </DefaultPageLayout>
-  )
-}
+
+
+    return (
+      <DefaultPageLayout title="All Posts" >
+        
+        <PostArchive />
+      </DefaultPageLayout>
+    )
+  }

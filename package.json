@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@chenfengyuan/datepicker": "^1.0.9",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "next": "10.2.2",
     "node-sass": "^4.9.3",

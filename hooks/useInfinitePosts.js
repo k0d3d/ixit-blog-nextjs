@@ -6,10 +6,10 @@ export default function useInfinitePosts() {
     'infinitePosts',
     (key, nextPageOffset = 0) =>
       axios
-        .get('/api/posts', {
+        .get('http://localhost:1337/posts', {
           params: {
-            pageSize: 3,
-            pageOffset: nextPageOffset,
+            // pageSize: 3,
+            // pageOffset: nextPageOffset,
           },
         })
         .then((res) => res.data),
