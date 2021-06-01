@@ -1,12 +1,13 @@
 import { useInfiniteQuery } from 'react-query'
 import axios from 'axios'
+import {IPosts} from '../domains/Posts'
 
 export default function useInfinitePosts() {
-  return useInfiniteQuery(
+  return useInfiniteQuery<IPosts, Error>(
     'infinitePosts',
     (key, nextPageOffset = 0) =>
       axios
-        .get('http://localhost:1337/posts', {
+        .get(process.env.NEXT_PUBLIC_API_HOST + '/posts', {
           params: {
             // pageSize: 3,
             // pageOffset: nextPageOffset,
@@ -14,7 +15,7 @@ export default function useInfinitePosts() {
         })
         .then((res) => res.data),
     {
-      getFetchMore: (lastResult) => lastResult.nextPageOffset,
+      getNextPageParam: (lastPage, allPages) => lastPage.nextCursor
     }
   )
 }

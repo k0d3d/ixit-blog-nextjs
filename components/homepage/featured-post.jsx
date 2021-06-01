@@ -10,7 +10,7 @@ export default function FeaturedPost(props) {
             <div className="banner-img-area">
               <h4>featured stories</h4>
               <div className="banner-img">
-                <img src="assets/img/homepage/banner-image.jpg" alt />
+                <img src="assets/img/homepage/banner-image.jpg"  />
               </div>
             </div>
             <div className="banner-content-area">

@@ -8,10 +8,10 @@ const PostTitle = () => (
                         <p>29.Nov.2018 . 4 min read . Written by Eiad Basha</p>
                         <div class="social-icon">
                             <ul class="d-flex align-items-center justify-content-between">
-                                <li><a href=""><img src="assets/img/svg/facebook.svg" alt="" /></a></li>
-                                <li><a href=""><img src="assets/img/svg/instagram.svg" alt="" /></a></li>
-                                <li><a href=""><img src="assets/img/svg/twitter.svg" alt="" /></a></li>
-                                <li><a href=""><img src="assets/img/svg/youtube.svg" alt="" /></a></li>
+                                <li><a href=""><img src="assets/img/svg/facebook.svg"  /></a></li>
+                                <li><a href=""><img src="assets/img/svg/instagram.svg"  /></a></li>
+                                <li><a href=""><img src="assets/img/svg/twitter.svg"  /></a></li>
+                                <li><a href=""><img src="assets/img/svg/youtube.svg"  /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ export default function SinglePost() {
         <div className="row">
           <div className="col-lg-10 m-auto">
             <div className="post-thumb">
-              <img src="assets/img/single-blog/post-thum.jpg" alt />
+              <img src="assets/img/single-blog/post-thum.jpg"  />
               <a href>Featured Stories</a>
             </div>
           </div>
@@ -51,12 +51,12 @@ export default function SinglePost() {
             <div className="row">
               <div className="col-md-6 mb-md-30">
                 <div className="single-post-thumb">
-                  <img src="assets/img/single-blog/blog-thum1.jpg" alt />
+                  <img src="assets/img/single-blog/blog-thum1.jpg"  />
                 </div>
               </div>
               <div className="col-md-6 mb-md-30">
                 <div className="single-post-thumb">
-                  <img src="assets/img/single-blog/blog-thum2.jpg" alt />
+                  <img src="assets/img/single-blog/blog-thum2.jpg"  />
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function SinglePost() {
         <div className="row">
           <div className="col-lg-8 m-auto">
             <blockquote className="blockquote">
-              <img src="assets/img/svg/cotation.svg" alt />
+              <img src="assets/img/svg/cotation.svg"  />
           Together third in third said, third open place moving i lesser itself bring wherein, female. Midst fruitful fourth air yielding fruitful.</blockquote>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function SinglePost() {
           <div className="col-md-8 m-auto">
             <div className="profile-area">
               <div className="profile-img">
-                <img src="assets/img/single-blog/profile-img.jpg" alt />
+                <img src="assets/img/single-blog/profile-img.jpg"  />
               </div>
               <div className="blog-profile-content">
                 <h3>Eiad Basha</h3>
@@ -86,10 +86,10 @@ export default function SinglePost() {
                 <h4>Follow me :</h4>
                 <div className="social-icon">
                   <ul className="d-flex align-items-center">
-                    <li><a href><img src="assets/img/svg/facebook.svg" alt /></a></li>
-                    <li><a href><img src="assets/img/svg/instagram.svg" alt /></a></li>
-                    <li><a href><img src="assets/img/svg/twitter.svg" alt /></a></li>
-                    <li><a href><img src="assets/img/svg/youtube.svg" alt /></a></li>
+                    <li><a href><img src="assets/img/svg/facebook.svg"  /></a></li>
+                    <li><a href><img src="assets/img/svg/instagram.svg"  /></a></li>
+                    <li><a href><img src="assets/img/svg/twitter.svg"  /></a></li>
+                    <li><a href><img src="assets/img/svg/youtube.svg"  /></a></li>
                   </ul>
                 </div>
               </div>
