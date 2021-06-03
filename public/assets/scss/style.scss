@@ -73,7 +73,7 @@ Author:     Electronthemes
 
 
 a {
-    color: black;
+    color: unset;
 }
 
 .container {
@@ -168,7 +168,21 @@ a {
 .menu-bar ul li {
     padding: 13px 15px;
 }
-
+.post-thumb{
+    border-radius: 5px;
+}
+.footer-bottom {
+    padding: 12px 0px;
+}
+.container {
+    max-width: 1192px;
+}
+.footer-area{
+    
+    p, .footer-privacy-card a {
+        font-size: 14px;
+    }
+}
 @media (min-width: 768px) {
 
     .offset-md-1 {
