@@ -9,7 +9,7 @@ export function PostContent(props: {
       const {attribs} = domDode
       if (attribs && attribs.src && attribs.src.length > 0) {
         const props = attributesToProps(attribs);
-        props.src = `${props.src.replace(process.env.NEXT_PUBLIC_MEDIA_HOST, process.env.NEXT_PUBLIC_MEDIA_HOST)} `  //<name>?tr=w-1200,h-630,fo-auto
+        props.src = `${props.src.replace(process.env.NEXT_PUBLIC_API_HOST, process.env.NEXT_PUBLIC_MEDIA_HOST)} `  //<name>?tr=w-1200,h-630,fo-auto
         return <img {...props} />;
       }
     }
