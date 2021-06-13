@@ -1,5 +1,8 @@
 This is a blog app built using Next.js. 
-The idea starts out as a blog app but it will also be a playground where I can test my apps and efforts improving in 
+The code is part of a post I wrote about 
+How to convert a HTML Template to a Next.js blog connected to a CMS
+
+The blog will also be a playground where I can test my apps and my efforts improving in 
 the blockchain space. 
 
 I plan to try out ideas like 
